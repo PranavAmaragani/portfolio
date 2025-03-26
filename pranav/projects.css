@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Gidole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2B3972;
+    color:white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1d1d1d; ;
+    color: white;
+  
+
+}
+
+.logo{
+    margin: 0.5rem;
+}
+
+.logo .name a {
+    color: #D6B866;
+    font-size: 1.8rem;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+}
+
+
+.logo .bold{
+    color: #D6B866;
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-links li{
+    list-style: none;
+   
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 20px;
+    font-family: "Geologica", sans-serif;
+    
+}
+
+.nav-links li a:hover{
+    color: #D4AF37;
+}
+
+.nav-links li:hover{
+  background-color: #BF0D12;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+
+
+.toggle-button{
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 550px){
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+      
+    }
+    .navbar{
+        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li{
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
+
+.projects {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-proj {
+    font-size: 16px;
+    color: #555;
+}
+
+.image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .description, .image {
+        padding-right: 0;
+        min-width: 100%;
+    }
+
+    .image img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h2 {
+        font-size: 24px;
+    }
+    
+    .project-title {
+        font-size: 20px;
+    }
+    
+    .about-proj {
+        font-size: 14px;
+    }
+    
+    .projects-section {
+        padding: 10px;
+    }
+    
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #BF0D12;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700; 
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFD700; 
+}
+
+.footer-location {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+
+    
